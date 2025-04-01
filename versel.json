@@ -1,13 +1,15 @@
 {
-    "builds": [{
-      "src": "ghibligen/wsgi.py",
-      "use": "@vercel/python"
-    }],
+    "version": 2,
+    "builds": [
+        {
+            "src": "ghibligen/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "ghibligen/wsgi.py"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "ghibligen/wsgi.py"
+        }
     ]
-  }
-  
+}
